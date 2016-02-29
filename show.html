@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0,  user-scalable=no, minimal-ui" />
+	<meta charset="UTF-8">
+	<title>网站</title>
+<link href="css/conmmon.css" rel="stylesheet" type="text/css">
+<link href="css/show.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/TouchSlide.js"></script>
+</head>
+<body>
+<div class="cont">
+	<div class="ls_title"><span>商品详情</span></div>
+	<div class="so_slid" id="focus">
+		<div class="sos_top bd">
+			<ul class="clear">
+				<li><img src="images/show/so_01.jpg" alt=""></li>
+				<li><img src="images/show/so_01.jpg" alt=""></li>
+				<li><img src="images/show/so_01.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div class="sos_bot hd">
+			<ul class="clear"></ul>
+		</div>
+	</div>
+	<div class="so_sub">
+		<p class="sob_p">极睿®滤挂咖啡&nbsp;&nbsp;蓝山盒装10片</p>
+		<ul class="clear sob_ul">
+			<li>价格：<span>￥50</span></li>
+			<li>邮费：<span>6</span></li>
+		</ul>
+		<ul class="sob_ul2 clear">
+			<span class="sob_span">数量:</span>
+			<li class="sob_li1"><img src="images/show/so_02.jpg" alt="减"></li>
+			<li class="sob_li2"><input type="tel"class="sob_tx" value="1"></li>
+			<li class="sob_li3"><img src="images/show/so_03.jpg" alt="加"></li>
+		</ul>
+		<dl class="sob_dl">
+			<dt><a href="">直接购买</a></dt>
+			<dd><a href="" title="">加入购物车</a></dd>
+		</dl>
+	</div>
+	<div class="so_abut"></div><!--商品详情-->
+</div><!--cont-->
+<script type="text/javascript">
+	TouchSlide({ 
+		slideCell:"#focus",
+		titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+		mainCell:".bd ul", 
+		effect:"left", 
+		autoPlay:false,//自动播放
+		autoPage:true, //自动分页
+		switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+	});
+
+	//数字加减
+	$(".sob_li3").click(function(){
+		var oldValue=parseInt($('.sob_tx').val());//取出现在的值，并使用parseInt转为int类型数据
+         oldValue++;//自加1
+        $('.sob_tx').val(oldValue);//将增加后的值付给原控件
+	});
+	$(".sob_li1").click(function(){
+		var oldValue=parseInt($('.sob_tx').val());//取出现在的值，并使用parseInt转为int类型数据
+		if(oldValue == 1){}else{
+         oldValue--;//自加1
+        $('.sob_tx').val(oldValue);//将增加后的值付给原控件
+		}
+	});
+</script>
+</body>
+</html>

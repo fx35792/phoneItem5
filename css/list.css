@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* 首页 */
+.ls_title{ height: 45px; line-height: 45px; color: #fff; background: #401d07; width: 100%; text-align: center; font-size: 18px;}
+.ls_m_title{ background: #eeecec; height: 50px;}
+.ls_m_title li{ width: 32%; float: left; text-align: center; color: #4f2809; height: 40px; background: #fff; margin-top:5px; line-height: 40px; font-size: 15px;  -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.ls_m_title li.on{ color: #fff; background: #4f2809}
+.ls_m_title li:nth-child(2){ margin-left:2%;}
+.ls_m_title li:nth-child(3){ float: right;}
+
+.ls_m_cont{ width: 94%; margin: 0 auto;}
+.ls_b_p{ padding-top:8px; border-bottom:1px solid #eeecec; padding-bottom: 8px;}
+.ls_b_left{ float: left; width: 38%;  }
+.ls_b_left img{ width: 100%; height: auto;}
+.ls_b_right{ width: 60%; float: right;}
+.lsb_p {}
+.lsb_p a{color: #401d07; font-size: 16px; line-height: 25px;}
+.lsb_ul1{ margin-top:5px;}
+.lsb_ul1 li{ float: left; display: inline-block; font-size: 16px; line-height: 30px;}
+.lsb_ul1 li:nth-child(1){ margin-right:8px;}
+.lsb_ul1 li span{ color: #401d07; font-size: 18px;}
+.lsb_ul2{ width: 100%; margin-top: 8px;}
+.lsb_ul2 li{ width: 48%; margin:0 1%;  display: inline-block; float: left; height: 35px; background: #9f674b; text-align: center; line-height: 35px;}
+.lsb_ul2 li a{ color: #fff; font-size: 16px;}

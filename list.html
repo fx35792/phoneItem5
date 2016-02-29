@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0,  user-scalable=no, minimal-ui" />
+	<meta charset="UTF-8">
+	<title>网站</title>
+<link href="css/conmmon.css" rel="stylesheet" type="text/css">
+<link href="css/list.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+<div class="cont">
+	<div class="ls_title"><span>极睿分类</span></div>
+	<div class="ls_main">
+		<div class="ls_m_title">
+			<ul class="clear">
+				<li class="on">挂耳咖啡系列</li>
+				<li>精选咖啡系列</li>
+				<li>舒适咖啡系列</li>
+			</ul>
+		</div>
+		<div class="ls_m_cont">
+
+			<div class="ls_m_box ls_m_box1">
+
+				<div class="ls_b_p clear">
+					<div class="ls_b_left"><a href=""><img src="images/list/ju_07.jpg" alt=""></a></div>
+					<div class="ls_b_right">
+						<p class="lsb_p"><a href="" title="">极睿® 滤挂咖啡肯尼亚盒装10片装</a></p>
+						<ul class="lsb_ul1 clear">
+							<li>价格:<span>￥50.00</span></li>
+							<li>邮费:<span>6</span></li>
+						</ul>
+						<ul class="lsb_ul2 clear">
+							<li><a href="" title="">立即购买</a></li>
+							<li><a href="">加入购物车</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="ls_m_box ls_m_box2" style="display:none;">
+
+				<div class="ls_b_p clear">
+					<div class="ls_b_left"><a href=""><img src="images/list/ju_07.jpg" alt=""></a></div>
+					<div class="ls_b_right">
+						<p class="lsb_p"><a href="" title="">极睿® 滤挂咖啡肯尼亚盒装10片装</a></p>
+						<ul class="lsb_ul1 clear">
+							<li>价格:<span>￥50.00</span></li>
+							<li>邮费:<span>6</span></li>
+						</ul>
+						<ul class="lsb_ul2 clear">
+							<li><a href="" title="">立即购买</a></li>
+							<li><a href="">加入购物车</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ls_b_p clear">
+					<div class="ls_b_left"><a href=""><img src="images/list/ju_07.jpg" alt=""></a></div>
+					<div class="ls_b_right">
+						<p class="lsb_p"><a href="" title="">极睿® 滤挂咖啡肯尼亚盒装10片装</a></p>
+						<ul class="lsb_ul1 clear">
+							<li>价格:<span>￥50.00</span></li>
+							<li>邮费:<span>6</span></li>
+						</ul>
+						<ul class="lsb_ul2 clear">
+							<li><a href="" title="">立即购买</a></li>
+							<li><a href="">加入购物车</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="ls_m_box ls_m_box3" style="display: none">
+
+				<div class="ls_b_p clear">
+					<div class="ls_b_left"><a href=""><img src="images/list/ju_07.jpg" alt=""></a></div>
+					<div class="ls_b_right">
+						<p class="lsb_p"><a href="" title="">极睿® 滤挂咖啡肯尼亚盒装10片装</a></p>
+						<ul class="lsb_ul1 clear">
+							<li>价格:<span>￥50.00</span></li>
+							<li>邮费:<span>6</span></li>
+						</ul>
+						<ul class="lsb_ul2 clear">
+							<li><a href="" title="">立即购买</a></li>
+							<li><a href="">加入购物车</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ls_b_p clear">
+					<div class="ls_b_left"><a href=""><img src="images/list/ju_07.jpg" alt=""></a></div>
+					<div class="ls_b_right">
+						<p class="lsb_p"><a href="" title="">极睿® 滤挂咖啡肯尼亚盒装10片装</a></p>
+						<ul class="lsb_ul1 clear">
+							<li>价格:<span>￥50.00</span></li>
+							<li>邮费:<span>6</span></li>
+						</ul>
+						<ul class="lsb_ul2 clear">
+							<li><a href="" title="">立即购买</a></li>
+							<li><a href="">加入购物车</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ls_b_p clear">
+					<div class="ls_b_left"><a href=""><img src="images/list/ju_07.jpg" alt=""></a></div>
+					<div class="ls_b_right">
+						<p class="lsb_p"><a href="" title="">极睿® 滤挂咖啡肯尼亚盒装10片装</a></p>
+						<ul class="lsb_ul1 clear">
+							<li>价格:<span>￥50.00</span></li>
+							<li>邮费:<span>6</span></li>
+						</ul>
+						<ul class="lsb_ul2 clear">
+							<li><a href="" title="">立即购买</a></li>
+							<li><a href="">加入购物车</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div><!--main-->
+</div><!--cont-->
+<script type="text/javascript">
+	$(function(){
+		$('.ls_m_title li').click(function(){
+			$(this).addClass('on').siblings().removeClass('on');
+			var inx=$(this).index();//alert(inx);
+			$('.ls_m_cont .ls_m_box').eq(inx).show(0).siblings().hide(0);
+		});
+	});
+</script>
+</body>
+</html>

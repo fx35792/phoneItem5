@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0,  user-scalable=no, minimal-ui" />
+	<meta charset="UTF-8">
+	<title>网站</title>
+<link href="css/conmmon.css" rel="stylesheet" type="text/css">
+<link href="css/order.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cityselect.js"></script>
+<style>
+	body{ background: #eeecec;}
+</style>
+</head>
+<body>
+<div class="cont">
+	<div class="ls_title"><span>订单确认</span></div>
+	<div class="or_main">
+		<ul class="or_ul1">
+			<li><label>姓名</label><input type="text" class="or_text" ></li>
+			<li><label>联系电话</label><input type="tel" class="or_text2" ></li>
+		</ul>
+		<ul class="or_ul1" id="city">
+			<li><label>省/市</label><select style="font-size: 16px; text-indent: 30%;" class="prov or_sel"></select>  </li>
+			<li><label>市/区</label><select style="font-size: 16px; text-indent: 30%;" class="city or_sel" disabled="disabled"></select>  </li>
+			<li class="or_li3"><label>区/县</label><select style="font-size: 16px; text-indent: 30%;" class="dist or_sel" disabled="disabled"></select>  </li>
+		</ul>
+		<ul class="or_ul2">
+			<li><textarea class="or_txta" placeholder="乡镇街道"></textarea></li>
+		</ul>
+		<div class="or_odr">
+			<div class="at_list clear">
+			<div class="at_l_left"><img src="images/list/ju_07.jpg" alt=""></div>
+			<div class="at_l_right">
+				<p class="atl_p1"><a href="" title="">极睿® 滤挂咖啡肯尼亚盒装10片装</a></p>
+				<p class="atl_p2">￥50.00</p>
+				<p class="atl_p2"><span>数量</span><b>1</b></p>
+			</div>
+		</div><!--at_list-->
+		<div class="at_list clear">
+			<div class="at_l_left"><img src="images/list/ju_07.jpg" alt=""></div>
+			<div class="at_l_right">
+				<p class="atl_p1"><a href="" title="">极睿® 滤挂咖啡肯尼亚盒装10片装</a></p>
+				<p class="atl_p2">￥50.00</p>
+				<p class="atl_p2"><span>数量</span><b>1</b></p>
+			</div>
+		</div><!--at_list-->
+
+		</div>
+		<div class="or_jis"> 
+		<dl class="atm_hj clear">
+			<dt>合计：<span>￥&nbsp;150.00</span></dt>
+			<dd><a href="">去结算</a></dd>
+		</dl>
+	</div>
+	</div>
+</div><!--cont-->
+<script type="text/javascript">
+	$(function(){
+	$("#city").citySelect({
+		prov:"北京", 
+		city:"海淀区",
+		nodata:"none"
+	});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0,  user-scalable=no, minimal-ui" />
+	<meta charset="UTF-8">
+	<title>网站</title>
+<link href="css/conmmon.css" rel="stylesheet" type="text/css">
+<link href="css/cart.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<style>
+	body{ background: #eeecec;}
+</style>
+</head>
+<body>
+<div class="cont at_cont">
+	<div class="ls_title"><span>购物车</span></div>
+	<div class="at_main">
+		<div class="at_list clear">
+			<div class="at_l_left"><img src="images/list/ju_07.jpg" alt=""></div>
+			<div class="at_l_right">
+			<img src="images/cart/at_01.png" class="at_dele" alt="删除">
+				<p class="atl_p1"><a href="" title="">极睿® 滤挂咖啡肯尼亚盒装10片装</a></p>
+				<p class="atl_p2">￥50.00</p>
+				<ul class="sob_ul2 clear">
+					<span class="sob_span">数量:</span>
+					<li class="sob_li1"><img src="images/show/so_02.jpg" alt="减"></li>
+					<li class="sob_li2"><input type="tel"class="sob_tx" value="1" readonly></li>
+					<li class="sob_li3"><img src="images/show/so_03.jpg" alt="加"></li>
+				</ul>
+			</div>
+		</div><!--at_list-->
+		<div class="at_list clear">
+			<div class="at_l_left"><img src="images/list/ju_07.jpg" alt=""></div>
+			<div class="at_l_right">
+				<img src="images/cart/at_01.png" class="at_dele" alt="删除">
+				<p class="atl_p1"><a href="" title="">极睿® 滤挂咖啡肯尼亚盒装10片装</a></p>
+				<p class="atl_p2">￥50.00</p>
+				<ul class="sob_ul2 clear">
+					<span class="sob_span">数量:</span>
+					<li class="sob_li1"><img src="images/show/so_02.jpg" alt="减"></li>
+					<li class="sob_li2"><input type="tel"class="sob_tx" value="1" readonly></li>
+					<li class="sob_li3"><img src="images/show/so_03.jpg" alt="加"></li>
+				</ul>
+			</div>
+		</div><!--at_list-->
+
+		<div class="at_list clear">
+			<div class="at_l_left"><img src="images/list/ju_07.jpg" alt=""></div>
+			<div class="at_l_right">
+				<img src="images/cart/at_01.png" class="at_dele" alt="删除">
+				<p class="atl_p1"><a href="" title="">极睿® 滤挂咖啡肯尼亚盒装10片装</a></p>
+				<p class="atl_p2">￥50.00</p>
+				<ul class="sob_ul2 clear">
+					<span class="sob_span">数量:</span>
+					<li class="sob_li1"><img src="images/show/so_02.jpg" alt="减"></li>
+					<li class="sob_li2"><input type="tel"class="sob_tx" value="2" readonly></li>
+					<li class="sob_li3"><img src="images/show/so_03.jpg" alt="加"></li>
+				</ul>
+			</div>
+		</div><!--at_list-->
+		<div class="at_conti"><a href="" class="clear"><span><img src="images/cart/at_02.png" alt=""></span>继续添加</a></div>
+		<dl class="atm_hj clear">
+			<dt>合计：<span>￥&nbsp;150.00</span></dt>
+			<dd><a href="">去结算</a></dd>
+		</dl>
+	</div>
+</div><!--cont-->
+<script>
+$(function(){
+//数字加减
+	$(".sob_li3").click(function(){
+		var oldValue=parseInt($(this).prev().children().val());//取出现在的值，并使用parseInt转为int类型数据
+         oldValue++;//自加1
+        $(this).prev().children().val(oldValue);//将增加后的值付给原控件
+	});
+$(".sob_li1").click(function(){
+		var oldValue=parseInt($(this).next().children().val());//取出现在的值，并使用parseInt转为int类型数据
+		if(oldValue==1){
+			if(confirm('再减没有了！确定要删除？')){
+				$(this).parent().parent().parent().slideUp(500);
+			}
+			}else{
+		oldValue--;//自减1
+        $(this).next().children().val(oldValue);//将增加后的值付给原控件	
+			}
+	});
+$('.at_dele').click(function(){
+	if(confirm('确认要删除？')){
+		$(this).parent().parent().slideUp(500);
+	}
+})
+
+});
+</script>
+</body>
+</html>

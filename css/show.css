@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* 产品详情 */
+.so_slid{ height: 180px; overflow: hidden; width: 100%; position: relative; border-bottom: 1px solid #eeecec; padding-bottom: 5px;}
+.sos_top ul li{ display: inline-block;  text-align: center;}
+.sos_top img{ height:180px; width: auto;}
+.sos_bot{ width: 100%; height: 10px; position: absolute;bottom: 15px; left: 0; text-align: center;}
+.sos_bot ul li{ display: inline-block; height: 8px; width: 8px; border-radius: 50px; background: #fff; box-shadow: 0 0 3px #ebebeb; overflow: hidden; line-height: 100px; margin:0 3px;}
+.sos_bot ul li.on{ background: #9f674b;}
+
+.so_sub{ width: 92%; margin:auto; margin-top: 10px;}
+.sob_p{ font-size: 18px;line-height: 35px; color: #040305;}
+.sob_ul li{ display: inline-block; float: left; margin-right: 20px; color: #333; font-size: 16px; margin-top: 5px;}
+.sob_ul li span{ color:#652906; font-size: 18px;}
+.sob_ul2{ margin-top: 10px;}
+.sob_span{ float: left; display: inline-block; color: #333; font-size: 16px; line-height: 30px; margin-right: 10px;}
+.sob_ul2 li{ float: left; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.sob_ul2 li.sob_li2{ width: 50px; height: 30px; display: inline-block; text-align: center; color: #333; font-size: 16px; line-height: 30px;}
+.sob_tx{ border: none; width: 50px; height: 28px; background: #fff; text-align: center; color: #c48b6d; font-size: 18px; -webkit-appearance:none; }
+.sob_ul2 li img{ height: 30px; width: auto; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.sob_dl{ margin: 20px auto 0 auto;}
+.sob_dl dt, .sob_dl dd{ width: 40%; height: 40px; line-height: 40px; background: #9f674b; text-align: center;}
+.sob_dl dt a, .sob_dl dd a{ color: #fff; font-size: 16px;}
+.sob_dl dt{ float: left;}
+.sob_dl dd{ float: right;}
+.so_abut{ text-align: center;}
+.so_abut img{ height: auto; width: 100%;}

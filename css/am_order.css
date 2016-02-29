@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* am_order */
+.am_box{ background: #fff; margin-bottom: 10px;}
+
+.amb_left{ float: left; width: 30%; margin:0 2%; }
+.amb_left img{height: 100px;}
+.am_mni li{ line-height: 22px; font-size: 12px;}
+.am_mni li span{ width: 35%; display: block; float: left;}
+.am_mni li b{ width: 65%; display: block; float: left; font-weight: normal; white-space:nowrap; text-align: right;}
+.am_right{ float:left; width: 56%;}
+.am_ann{ width: 9%; float: left; text-align: center;}
+.am_ann a{ height: 100%; display: block;}
+.am_ann img{ width:60%; margin-top: 40px;}
+
+
+
+
+
+
+
+
+
+
+

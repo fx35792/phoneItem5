@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* 个人中心 */
+
+
+.st_list{ background: #fff; border-top:1px solid #d6d6d6;}
+.st_list li{ position: relative; overflow: hidden; border-bottom:1px solid #d6d6d6;}
+.st_list li a{ display: block; width: 94%; margin:0 auto; line-height: 51px; height: 51px; font-size: 16px;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+.st_list li b img{ height: 20px; margin-top: 15px;}
+.st_list li span{padding-left: 30px; display: inline-block; line-height: 42px; color: #381602;}
+.st_list li b{ float: right;}
+.st_em{ position: absolute; height: 51px; line-height: 51px; right: 10%; top: 0; font-style:normal; font-size: 14px; color: #b44800;}
+.st_list ul li:nth-child(1) span{ background: url(../images/set/st_01.png) left center no-repeat; background-size:auto 23px;}
+.st_list ul li:nth-child(2) span{ background: url(../images/set/st_02.png) left center no-repeat; background-size:auto 23px;}
+.st_list ul li:nth-child(3) span{ background: url(../images/set/st_03.png) left center no-repeat; background-size:auto 23px;}
+.st_list ul li:nth-child(4) span{ background: url(../images/set/st_04.png) left center no-repeat; background-size:auto 23px;}
+
+
+

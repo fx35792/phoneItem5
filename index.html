@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0,  user-scalable=no, minimal-ui" />
+	<meta charset="UTF-8">
+	<title>网站</title>
+<link href="css/conmmon.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+<div class="cont">
+	<div class="top">
+		<dl class="clear">
+			<dt><img src="images/index/ju_02.png" alt=""></dt>
+			<dd>极客咖啡极睿造</dd>
+		</dl>
+	</div>
+	<div class="cent">
+		<div class="ct_div"><a href="">立即下单</a></div>
+		<div class="ct_nav">
+			<dl class="b_dl1 clear">
+				<dt><a href="" title="关于极睿">关于极睿</a></dt>
+				<dd><a href="" title="个人中心">个人中心</a></dd>
+			</dl>
+		</div>
+	</div>
+	<div class="bot">
+		<ul class="b_ul2 clear">
+			<li><a href="" title=""><img src="images/index/ju_04.png" alt=""><span>+关注</span></a></li>
+			<li><a href="" title=""><img src="images/index/ju_05.png" alt=""><span>赞</span></a></li>
+			<li><a href="" title=""><img src="images/index/ju_06.png" alt=""><span>评价</span></a></li>
+			<li class="b_lish"><img src="images/index/ju_07.png" alt=""><span>分享</span></li>
+		</ul>
+	</div>
+	<div class="share" style="display:none">
+		<div class="sha_main">
+			<p>分享</p>
+			<ul class="clear">
+				<li><a href=""><img src="images/index/ju_08.png" alt=""><span>QQ空间</span></a></li>
+				<li><a href=""><img src="images/index/ju_08.png" alt=""><span>QQ空间</span></a></li>
+				<li><a href=""><img src="images/index/ju_08.png" alt=""><span>QQ空间</span></a></li>
+			</ul>
+			<span class="sha_span">取消</span>
+		</div>
+	</div>
+</div><!--cont-->
+<script type="text/javascript">
+	$(function(){
+		var winh=$(window).height();
+		var toph=$('.top').height();
+		var both=$('.bot').height();
+		$('.cent').height(winh-toph-both);
+		$('.b_ul2 li').click(function(){
+			$(this).addClass('on').siblings().removeClass('on');
+		});
+		$('.b_lish').click(function(){
+			$('.share').fadeIn(500);
+		});
+		$('.sha_span').click(function(){
+			$('.share').fadeOut(500);
+			$('.b_lish').removeClass('on')
+
+		});
+	});
+
+</script>
+</body>
+</html>

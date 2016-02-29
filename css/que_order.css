@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* order */
+.or_main{ width: 94%; margin:0 auto;}
+.qo_info{  padding:5px 0; position: relative;}
+.qo_info ul li{ padding:10px 0; display: block; background: #fff; margin-top: 1px; color: #2a190f;}
+.qo_info li span{ margin-left: 5px; font-size: 16px; display: inline-block; line-height:100%;}
+.qo_info li b{ font-weight: normal; width: 72%; text-align: center; display: inline-block; margin-left: 5px;}
+.qo_info .qoi_li2 b{ width: 62%;}
+.qo_info .qo_li3 span{ vertical-align: top; line-height: 30px;}
+.qo_info .qo_li3 b{ text-align: left; margin-left: 10px;}
+.qo_xiu{ position: absolute; right: 10%; top: 15px;}
+.qo_xiu img{ height: 30px; width: auto;}
+
+.or_odr{ background: #fff; padding:5px 0; margin-top: 10px;}
+.at_list{ padding: 5px 0; border-bottom:1px solid #eeecec;}
+.at_l_left{ float:left; margin-left: 5px;}
+.at_l_left img{ width: 115px; margin-right: 10px;}
+.at_l_right{ position: relative;}
+.atl_p1 { padding-right:3px;}
+.atl_p1 a{ font-size: 16px; color: #401d07; line-height:26px;}
+.atl_p2{ color: #c48b6d; font-size: 16px; line-height: 30px; }
+.atl_p2 span{ color: #2a190f;}
+.atl_p2 b{ font-size: 18px; font-weight: normal; margin-left: 5px;}
+
+.qo_bot{ background: #fff; padding:10px 0; margin-top: 10px;}
+.qo_bot dl{ width: 96%; margin:0 auto;}
+.qo_bot dd{ line-height: 24px; font-size: 16px;}
+.qo_bot dd span{ display: block; width: 30%; float: left; text-align: right;}
+.qo_bot dd b{ font-weight: normal; width: 60%; float: left; display: block; margin-left: 5%; color: #be825e;}
+.qo_bot .qob_dd1 b{ font-size: 18px;}
+.qo_bot .qob_dd2 em{ font-size: 14px; font-style:normal; margin-left: 5px; color: #666666;}
+.qo_bot dt { margin-top: 20px;}
+.qo_bot dt a{ display: block; line-height: 45px; height: 45px; color: #fff; font-size: 18px; background: #3c1905; text-align: center; width: 60%; margin:0 auto;}

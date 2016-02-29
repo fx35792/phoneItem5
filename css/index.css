@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* 首页 */
+
+.top{ height: 50px; background: #401d07;}
+.top dl{ width:94%; margin: auto; }
+.top dt{ width:50%;  float: left;}
+.top dt img{ width: auto; height: 40px; margin-top: 5px;}
+.top dd{ width: 50%; float: right; color: #fff; line-height: 50px; text-align: right; font-size: 14px;}
+.cent{background:#a06b3b url(../images/index/ju_01.png) center top no-repeat; background-size:100% auto; position: relative;}
+.ct_div{ background: rgba(0,0,0,0.5); height: 45px; width: 120px; text-align: center; border-radius: 8px; position: absolute; right: 30px; top:28%; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.ct_div a{ line-height: 45px; display: inline-block; color: #fff; font-size: 16px; background: url(../images/index/ju_03.png) right center no-repeat; background-size:auto 20px; padding-right: 25px;}
+
+.ct_nav { width: 100%; position: absolute; bottom: 20px; left: 0;}
+.b_dl1{ width: 80%; margin: auto;}
+.b_dl1 a{ color: #f9d9c5; display: block; height: 45px;  padding:0 25px; font-size: 16px;}
+.b_dl1 dt, .b_dl1 dd{ display: inline-block; height: 45px; background: #452d1a; line-height: 45px;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+.b_dl1 dt{ float: left;}
+.b_dl1 dd{ float: right;}
+.bot{ height: 55px; background: #4f2809; position: fixed; bottom:0; left: 0; width: 100%; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.b_ul2 li{ width: 25%; float: left; text-align: center; display: block; height: 55px;}
+.b_ul2 li.on{ background: #3c1905; height: 55px;}
+.b_ul2 li a{ display: block; height: 50px; width: 100%; line-height: 20px;}
+.b_ul2 li span{ display: block; color: #f6a87a;}
+.b_ul2 li img{ height: 22px; margin-top:5px;}
+
+
+	.share{ width: 100%; position: absolute; top:20%; left: 0;}
+	.sha_main{ width: 90%; background: #fff; border-radius: 4px; margin: 0 auto; padding:10px 0 20px 0;}
+	.sha_main p{ text-align: center; font-size: 20px; color: #2a190f; line-height: 35px;}
+	.sha_main ul{ width: 96%; margin: 0 auto;}
+	.sha_main ul li{ float: left; text-align: center; display: inline-block; margin: 0 10px;}
+	.sha_main ul li span{ display: block; color: #2a190f; font-size: 16px;}
+	.sha_main ul li img{ height: 35px; width: auto;}
+	.sha_span{ display: block; width: 40%; height: 35px; line-height: 35px; margin: 0 auto; background: #a47355; color: #fff; text-align: center; margin-top:20px; }
+
+
+
+
+
+
+
+
+
+
